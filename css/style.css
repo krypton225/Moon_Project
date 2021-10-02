@@ -1,0 +1,924 @@
+/* 
+    * Peace, mercy and blessings of God (alsalam ealaykum warahmat allah wabarakatuh).
+    * Hello in this project.
+    * This project is for training ONLY.
+    * This is created by me (Khaled Mohamed Mahmoud).
+    * ALL Technologies i used in this project are: HTML and CSS.
+    * There is no frameworks of CSS OR JAVASCRIPT.
+
+    The template which i used chech it here: https://demos.freehtml5.co/moon/
+    -> This is not excatly with it!
+    © Code in this project for => Khaled Mohamed.
+ */
+
+/* ****************************************************************************************************** */
+/* *********************************** This is the index of this file *********************************** */
+/* ****************************************************************************************************** */
+/*
+    1- Common things which is used in all project.
+      1.1- All.
+      1.2- font face.
+    2- The common things which are repeated in the project.
+      2.1 - my-head.
+      2.2- new-span.
+      2.3- hr.
+      2.4- clear.
+      2.5- mg-t.
+    3- Container.
+    4- Heading.
+    5- first-section.
+    6- second-section.
+    7- third-section.
+    8- fourth-section.
+    9- fifth-section.
+    10- sixth-section.
+    11- seventh-section.
+    12- app-store.
+    13- last-news.
+    14- awesome-work.
+    15- pricing.
+    16- love-work.
+    17- footer.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+/* work-sans-regular - latin */
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../webfonts/work-sans-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../webfonts/work-sans-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../webfonts/lato-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../webfonts/lato-v20-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../webfonts/lato-v20-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../webfonts/lato-v20-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../webfonts/lato-v20-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../webfonts/lato-v20-latin-regular.svg#Lato") format("svg"); /* Legacy iOS */
+}
+
+/* work-sans-regular - latin */
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../webfonts/work-sans-v11-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../webfonts/work-sans-v11-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../webfonts/work-sans-v11-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../webfonts/work-sans-v11-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../webfonts/work-sans-v11-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../webfonts/work-sans-v11-latin-regular.svg#WorkSans") format("svg"); /* Legacy iOS */
+}
+
+/* work-sans-800 - latin */
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../webfonts/work-sans-v11-latin-800.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../webfonts/work-sans-v11-latin-800.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../webfonts/work-sans-v11-latin-800.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../webfonts/work-sans-v11-latin-800.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../webfonts/work-sans-v11-latin-800.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../webfonts/work-sans-v11-latin-800.svg#WorkSans") format("svg"); /* Legacy iOS */
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+body {
+  font-family: "Work Sans";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      90deg,
+      rgba(255, 192, 39, 1) 0%,
+      rgba(251, 47, 10, 1) 100%,
+      rgb(184, 54, 21) 100%
+    ),
+    url("../assests/images/bg.jpg");
+}
+
+.my-head {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 100;
+  margin-bottom: 1.5rem;
+}
+
+.new-span {
+  font-weight: bold;
+  color: black;
+}
+
+hr {
+  height: 1px;
+  background-color: #e6e6e6fd;
+  border: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.mg-t {
+  margin-top: -20px;
+}
+
+.container {
+  width: 927px;
+  height: 7300px;
+  background-color: #f4f4f5;
+  margin: 60px 30px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.heading {
+  position: relative;
+}
+
+.fa-moon {
+  font-size: 49px;
+  font-weight: normal;
+  margin: 20px;
+  float: left;
+  transform: rotate(-30deg);
+}
+
+.fa-moon:hover {
+  cursor: pointer;
+  color: rgb(202, 82, 122);
+}
+
+.heading ul {
+  list-style: none;
+  float: left;
+  position: absolute;
+  right: -5%;
+  width: 50%;
+}
+
+.heading ul li {
+  display: inline-block;
+  text-transform: capitalize;
+  margin: 5px;
+  margin-top: 30px;
+  font-weight: normal;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+.heading ul:hover > li {
+  color: #c3c3c4;
+}
+
+.heading ul > li:hover {
+  color: black;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.first-section {
+  width: auto;
+  height: 500px;
+  position: relative;
+  margin: 10px auto;
+  background-image: url("../assests/images/hero-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.first-section .hello-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.first-section .hello-content p {
+  width: 100%;
+  margin: 8px auto;
+  font-family: "Lato";
+  font-size: 15px;
+  text-align: center;
+  color: #6f7174;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.second-section {
+  margin-top: 90px;
+}
+
+.second-section h2 {
+  font-weight: normal;
+  font-size: 30px;
+  color: #6f7174;
+}
+
+.second-section .easiest-way p {
+  width: 80%;
+  margin: 8px auto;
+  margin-top: 30px;
+  font-family: "Lato";
+  font-size: 17px;
+  text-align: center;
+  color: #6f7174;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.third-section {
+  margin-top: 30px;
+}
+
+.third-section .item {
+  width: 29%;
+  float: left;
+  text-align: center;
+  margin: 1%;
+}
+
+.third-section .item.second {
+  margin: 0 3%;
+}
+
+.third-section .item img {
+  width: 160px;
+  height: 160px;
+}
+
+.third-section .item h4 {
+  font-family: "Lato";
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 18px;
+  color: #6f7174;
+}
+
+.third-section .item.second h4 {
+  margin-top: 9px;
+}
+
+.third-section .item p {
+  font-family: "Lato";
+  font-size: 15px;
+  font-weight: 100;
+  color: #6f7174;
+  margin-bottom: 18px;
+}
+
+.third-section .item a {
+  margin-top: 18px;
+  color: #b46b77;
+  text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.fourth-section {
+  width: 100%;
+  height: 310px;
+  margin-top: 8%;
+}
+
+.fourth-section .my-work .item {
+  width: 25%;
+  float: left;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 10%;
+  color: #6f7174;
+}
+
+.fourth-section .my-work .item i {
+  font-size: 55px;
+  margin-bottom: 18px;
+}
+
+.fourth-section .my-work .item h4 {
+  margin-bottom: 17px;
+  font-size: 30px;
+}
+
+.fourth-section .my-work .item span {
+  text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.fifth-section {
+  margin-top: 10%;
+}
+
+.fifth-section .fifth-section-header {
+  text-align: center;
+}
+
+.fifth-section .fifth-section-header h3 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+.fifth-section .fifth-section-body {
+  margin-top: 50px;
+}
+
+.fifth-section .fifth-section-body .item {
+  width: 30%;
+  text-align: center;
+  float: left;
+  margin: 1%;
+  margin-bottom: 30px;
+}
+
+.fifth-section .fifth-section-body .item i {
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+
+.fifth-section .fifth-section-body .item h4 {
+  font-size: 22px;
+  font-weight: 100;
+  margin-bottom: 17px;
+  color: #4d5053;
+}
+
+.fifth-section .fifth-section-body .item p {
+  width: 100%;
+  font-size: 15px;
+  font-family: "Lato";
+  font-weight: lighter;
+  color: #212529;
+  letter-spacing: 1;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.sixth-section {
+  margin-top: 180px;
+}
+
+.sixth-section h3 {
+  font-weight: 100;
+  font-family: "Lato";
+  font-size: 35px;
+  margin-top: -20px;
+  color: #292d31;
+}
+
+.sixth-section p {
+  width: 80%;
+  margin: 8px auto;
+  margin-top: 30px;
+  font-family: "Lato";
+  font-size: 17px;
+  text-align: center;
+  color: #6f7174;
+}
+
+.sixth-section .content {
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.sixth-section .content .left-one,
+.sixth-section .content .right-one {
+  width: 40%;
+  float: left;
+}
+
+.sixth-section .content .left-one {
+  margin-left: 30px;
+}
+
+.sixth-section .content .left-one i {
+  font-size: 35px;
+  color: #b46b77;
+}
+
+.sixth-section .content .left-one h4 {
+  margin-top: 50px;
+  font-family: "Lato";
+  font-size: 25px;
+  font-weight: 100;
+  word-spacing: 2.5px;
+  letter-spacing: 1.2px;
+}
+
+.sixth-section .content .left-one p {
+  width: 100%;
+  text-align: initial;
+  font-size: 17px;
+  font-weight: 100;
+  margin-left: 5px;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.seventh-section {
+  margin-top: 100px;
+}
+
+.seventh-section .content {
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.seventh-section .content .left-one,
+.seventh-section .content .right-one {
+  width: 50%;
+  float: left;
+}
+
+.seventh-section .content .right-one i {
+  font-size: 35px;
+  color: #b46b77;
+  margin-bottom: 35px;
+}
+
+.seventh-section .content .right-one h4 {
+  font-family: "Lato";
+  font-size: 26px;
+  font-weight: 100;
+  word-spacing: 2.5px;
+  letter-spacing: 1.2px;
+  color: #292d31;
+}
+
+.seventh-section .content .right-one p {
+  width: 100%;
+  text-align: initial;
+  font-size: 17px;
+  font-weight: 100;
+  margin-left: 2px;
+  margin-top: 20px;
+  line-height: 1.6;
+  color: #6f7174;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.app-store {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.app-store .ready,
+.app-store .logos {
+  width: 40%;
+  float: left;
+}
+
+.app-store .ready {
+  margin-right: 80px;
+  margin-left: 30px;
+}
+
+.app-store .ready h4 {
+  font-family: "Lato";
+  font-size: 26px;
+  font-weight: 100;
+  letter-spacing: 1.2px;
+  word-spacing: 1.2px;
+  margin-bottom: 20px;
+  color: #212529;
+}
+
+.app-store .ready p {
+  width: 100%;
+  font-size: 16px;
+  font-family: "Lato";
+  font-weight: 100;
+  word-spacing: 1.5px;
+  color: #212529;
+}
+
+.app-store .logos img {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.last-news {
+  width: 100%;
+  text-align: center;
+  margin-top: 150px;
+  padding: 0 1%;
+}
+
+.last-news h3 {
+  font-size: 35px;
+  font-family: "Lato";
+  font-weight: 100;
+  color: #4d5053;
+  margin-bottom: 30px;
+}
+
+.last-news h3 span {
+  color: #292d31;
+  font-weight: bold;
+}
+
+.last-news p {
+  width: 80%;
+  color: #6f7174;
+  margin: auto;
+  margin-bottom: 3%;
+}
+
+.last-news .item {
+  width: 30%;
+  float: left;
+  margin-top: 50px;
+  transition: margin-top 2s;
+}
+
+.last-news .item:hover {
+  margin-top: 0.111111px;
+}
+
+.last-news .item.second {
+  margin-right: 4%;
+  margin-left: 4%;
+}
+
+.last-news .item img {
+  width: 268px;
+  height: 279px;
+  border-radius: 5px;
+}
+
+.last-news .item .classification,
+.last-news .item h3,
+.last-news .item .info,
+.last-news .item p,
+.last-news .item .author {
+  float: left;
+}
+
+.last-news .item .classification {
+  text-transform: uppercase;
+  color: #e997a5;
+  font-family: "Lato";
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.last-news .item h3 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 26px;
+  color: #212529;
+  letter-spacing: 1.3px;
+  margin-bottom: 10px;
+}
+
+.last-news .item .info,
+.last-news .item .info a {
+  color: #afafaf;
+  text-decoration: none;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.last-news .item p {
+  width: 100%;
+  text-align: left;
+  color: #4d5053;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.last-news .item .author {
+  color: #afafaf;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.awesome-work {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.awesome-work h3 {
+  font-size: 36px;
+  text-transform: capitalize;
+}
+
+.awesome-work p {
+  color: #4d5053;
+  font-family: "Lato";
+}
+
+.awesome-work .selectors {
+  margin-top: 5%;
+}
+
+.awesome-work .selectors span {
+  color: #f48395;
+  text-transform: capitalize;
+  font-weight: 100;
+  font-family: "Lato";
+  word-spacing: 0.1px;
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.awesome-work .pictures {
+  margin-top: 10px;
+}
+
+.awesome-work img {
+  width: 280px;
+  height: 380px;
+  float: left;
+  margin: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.ttb-effect {
+  position: relative;
+}
+
+.ttb-effect::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #35b8ad9c;
+  z-index: 111;
+  transition: height 0.5s;
+}
+
+.ttb-effect:hover:after {
+  height: 100%;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.pricing {
+  margin-top: 15%;
+}
+
+.pricing h3 {
+  text-transform: capitalize;
+  font-weight: 100;
+  font-family: "Lato";
+}
+
+.pricing p {
+  width: 80%;
+  margin: 8px auto;
+  margin-top: 30px;
+  font-family: "Lato";
+  font-size: 16px;
+  text-align: center;
+  color: #6f7174;
+}
+
+.pricing .services .item {
+  width: 31%;
+  height: 455px;
+  float: left;
+  margin: 50px 10px;
+  text-align: center;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+
+.pricing .services .item h5 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 18px;
+  font-family: "Work Sans" sans-serif;
+  margin-top: 20px;
+}
+
+.pricing .services .item.first h5 {
+  color: #fdba51;
+}
+
+.pricing .services .item.second h5 {
+  color: #35b8ad;
+}
+
+.pricing .services .item.third h5 {
+  color: #fc665f;
+}
+
+.pricing .services .item h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Work Sans", sans-serif;
+  display: inline-block;
+  margin-top: 14px;
+}
+
+.pricing .services .item sup {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.pricing .services .item .level {
+  color: #4d5053;
+  text-transform: capitalize;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.pricing .services .item ul {
+  margin-top: 40px;
+  margin-bottom: 120px;
+  list-style: none;
+}
+
+.pricing .services .item.second ul {
+  margin-bottom: 95px;
+}
+
+.pricing .services .item.third ul {
+  margin-bottom: 70px;
+}
+
+.pricing .services .item ul li {
+  text-transform: capitalize;
+  margin-top: 6px;
+  font-weight: 100;
+  font-family: "Lato";
+  color: #212529;
+}
+
+.pricing .services .item .first,
+.pricing .services .item .second,
+.pricing .services .item .third {
+  margin-top: -50px;
+  padding: 20px;
+}
+
+.pricing .services .item .second {
+  margin-bottom: 5px;
+}
+
+.pricing .services .item .first .item-price,
+.pricing .services .item .first .month,
+.pricing .services .item .first .btn,
+.pricing .services .item .second .item-price,
+.pricing .services .item .second .month,
+.pricing .services .item .second .btn,
+.pricing .services .item .third .item-price,
+.pricing .services .item .third .month,
+.pricing .services .item .third .btn {
+  display: block;
+  margin: auto;
+}
+
+.pricing .services .item .first .item-price,
+.pricing .services .item .second .item-price,
+.pricing .services .item .third .item-price {
+  margin-bottom: 5px;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.pricing .services .item .first .month,
+.pricing .services .item .second .month,
+.pricing .services .item .third .month {
+  color: #afafaf;
+  margin-bottom: 15px;
+}
+
+.pricing .services .item .btn {
+  width: 256px;
+  height: 34px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 5px;
+  text-transform: capitalize;
+  color: #f4f4f5;
+  font-size: 1rem;
+}
+
+.pricing .services .item .btn.btn-first {
+  background-color: #fdba51;
+  margin-top: 10px;
+}
+
+.pricing .services .item .btn.btn-second {
+  background-color: #35b8ad;
+}
+
+.pricing .services .item .btn.btn-third {
+  background-color: #fc665f;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.love-work {
+  margin-top: 180px;
+}
+
+.love-work h3 {
+  font-weight: 100;
+}
+
+.love-work .my-imgs {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+.footer {
+  margin-top: 65px;
+}
+
+.footer .copyright,
+.footer .social {
+  float: left;
+}
+
+.footer .copyright {
+  width: 60%;
+}
+
+.footer .copyright p {
+  width: 100%;
+  margin: 20px auto;
+  margin-left: 10px;
+  color: #6f7174;
+  font-size: 16px;
+}
+
+.footer .copyright p a {
+  color: #f8748a;
+  text-decoration: none;
+}
+
+.footer .social {
+  width: 40%;
+}
+
+.footer .social i {
+  float: right;
+  margin: 10px;
+  margin-top: 18px;
+  color: #f8748a;
+  cursor: pointer;
+}
